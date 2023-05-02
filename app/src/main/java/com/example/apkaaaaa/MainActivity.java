@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //createDatabase();
+        //insertData("K", "Anna", "Nowak", "01-01-1990", "123456789", true, false, true, true);
         getData();
     }
 
@@ -30,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
             if (myDatabase != null) {
                 Log.d("istnieje","Baza już istnieje.");
                 myDatabase.close();
-            }
-            else{
-                insertData("K", "Anna", "Nowak", "01-01-1990", "123456789", true, false, true, true);
             }
         }
     }
@@ -134,5 +133,9 @@ public class MainActivity extends AppCompatActivity {
     private void aktywnosc3(){
         Intent i = new Intent(this, Aktywnosc3.class);
         startActivity(i);
+    }
+
+    private void wpisane_dane(){
+
     }
 }
