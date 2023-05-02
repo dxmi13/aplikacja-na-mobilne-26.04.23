@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="212dp"
         android:layout_height="107dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,54 +29,6 @@
             android:layout_height="wrap_content"
             android:text="Mężczyzna" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/imie"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="Imię"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241" />
-
-    <TextView
-        android:id="@+id/data_urodzenia"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="DD-MM-YYYY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
-
-    <TextView
-        android:id="@+id/nazwisko"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="Nazwisko"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
-
-    <TextView
-        android:id="@+id/telefon"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="Nr telefonu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
 
     <CheckBox
         android:id="@+id/muzyka"
@@ -123,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.591" />
 
     <Button
         android:id="@+id/zapis"
@@ -136,5 +89,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.919" />
+
+    <EditText
+        android:id="@+id/nazwisko"
+        android:layout_width="215dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nazwisko"
+        app:layout_constraintBottom_toTopOf="@+id/data_urodzenia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imie"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/imie"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Imię"
+        app:layout_constraintBottom_toTopOf="@+id/nazwisko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/data_urodzenia"
+        android:layout_width="228dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="DD/MM/YYYY"
+        app:layout_constraintBottom_toTopOf="@+id/telefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazwisko"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="tel"
+        app:layout_constraintBottom_toTopOf="@+id/filmy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_urodzenia"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
