@@ -6,29 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:id="@+id/kobieta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kobieta"
+    <RadioGroup
+        android:layout_width="212dp"
+        android:layout_height="107dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.065">
 
-    <RadioButton
-        android:id="@+id/mezczyzna"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mężczyzna"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        <RadioButton
+            android:id="@+id/kobieta"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:text="Kobieta" />
+
+        <RadioButton
+            android:id="@+id/mezczyzna"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="Mężczyzna" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/imie"
@@ -37,32 +36,10 @@
         android:text="Imię"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mezczyzna"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <TextView
-        android:id="@+id/nazwisko"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="Nazwisko"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
-
-    <TextView
-        android:id="@+id/telefon"
-        android:layout_width="271dp"
-        android:layout_height="30dp"
-        android:text="Nr telefonu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.241" />
 
     <TextView
         android:id="@+id/data_urodzenia"
@@ -71,21 +48,34 @@
         android:text="DD-MM-YYYY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.395" />
 
-    <CheckBox
-        android:id="@+id/filmy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="film"
+    <TextView
+        android:id="@+id/nazwisko"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:text="Nazwisko"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintVertical_bias="0.312" />
+
+    <TextView
+        android:id="@+id/telefon"
+        android:layout_width="271dp"
+        android:layout_height="30dp"
+        android:text="Nr telefonu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
 
     <CheckBox
         android:id="@+id/muzyka"
@@ -94,10 +84,10 @@
         android:text="muzyka"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <CheckBox
         android:id="@+id/sport"
@@ -106,10 +96,10 @@
         android:text="sport"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.871" />
 
     <CheckBox
         android:id="@+id/literatura"
@@ -118,10 +108,22 @@
         android:text="literatura"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintVertical_bias="0.677" />
+
+    <CheckBox
+        android:id="@+id/filmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="film"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
 
     <Button
         android:id="@+id/zapis"
