@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <item
+        android:id="@+id/aktywnosc1"
+        android:title="Aktywnosc1" />
+    <item
         android:id="@+id/aktywnosc2"
         android:orderInCategory="100"
         android:title="Aktywnosc2" />

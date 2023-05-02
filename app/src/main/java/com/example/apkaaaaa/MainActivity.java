@@ -194,9 +194,4 @@ public class MainActivity extends AppCompatActivity {
         boolean lubiSport = sportCheckBox.isChecked();
         zapisz_do_bazy(deklaracja_plci, imie, nazwisko, telefon, dataUrodzenia, lubiFilmy, lubiLiterature, lubiMuzyke, lubiSport);
     }
-
-
-
-
-
 }
